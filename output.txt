@@ -1,4 +1,1 @@
-long int---> 12345678912345678 
-int--->1578423886 
-double--->12.234568 
-regular float--->12.234568 
+Bad luck!
