@@ -1,0 +1,25 @@
+// delete element //
+#include <stdio.h>
+
+int main() {
+    int arrsize;
+    scanf("%d",&arrsize);
+    int arr[arrsize];
+    for (int i=0; i<arrsize; i++){
+        int x; 
+        scanf("%d", &x);
+        arr[i]=x;
+    }
+    int ind;
+    scanf("%d", &ind);
+    for (int i=ind; i<arrsize-1; i++ ){
+        arr[i]=arr[i+1];
+    }
+    for (int i=0; i<arrsize-1; i++){
+        printf("%d ", arr[i]);
+    }
+    // last element stays we have no way of sizing an array
+    return 0;
+    
+    
+}   
