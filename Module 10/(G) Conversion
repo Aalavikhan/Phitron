@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    
+	char arr[100001];
+	scanf("%s",&arr);
+	int len = strlen(arr);
+	for (int i=0; i<len; i++){
+	    if(arr[i]==','){
+	        arr[i]=' ';
+	    }
+	    
+	    else if(97<=arr[i] && arr[i]<=122){
+	        arr[i]=arr[i]-32;
+	    }
+	    
+	    else if(65<=arr[i] && arr[i]<=90){
+	        arr[i]=arr[i]+32;
+	    }
+	}
+    printf("%s",arr);
+    return 0;
+}
