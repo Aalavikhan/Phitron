@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    int oddcnt=0;
+    int evencnt=0;
+    for (int i=0; i<n; i++){
+        int x;
+        scanf("%d",&x);
+        if (x%2==0){
+            evencnt++;
+        }
+        else{
+            oddcnt++;
+        }
+        
+    }
+    printf("%d %d", evencnt,oddcnt);
+    return 0;
+}
