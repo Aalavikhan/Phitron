@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int cap=0;
+    int sml=0;
+    char arr[1001];
+    scanf("%s",arr);
+    for (int i=0; i<strlen(arr); i++){
+        if (65<=arr[i] && arr[i]<=90){
+            cap++;
+        } 
+        else if(97<=arr[i] && arr[i]<=122){
+            sml++;
+        }
+    }
+    printf("%d %d", cap,sml);
+    return 0;
+}
